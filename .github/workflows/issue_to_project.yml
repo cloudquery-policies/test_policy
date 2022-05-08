@@ -17,8 +17,8 @@ jobs:
       - name: Move issue to ${{ env.todo }}
         uses: leonsteinhaeuser/project-beta-automations@v1.2.1
         with:
-          gh_token: ${{ secrets.GH_CQ_BOT }}
+          gh_token: ${{ secrets.GH_CQ_TEST_TOKEN }}
           organization: cloudquery
-          project_id: 1
+          project_id: 2
           resource_node_id: ${{ github.event.issue.node_id }}
           status_value: ${{ env.todo }} # Target status
