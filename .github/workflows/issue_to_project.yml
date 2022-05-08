@@ -19,6 +19,6 @@ jobs:
         with:
           gh_token: ${{ secrets.GH_CQ_TEST_TOKEN }}
           organization: cloudquery
-          project_id: 2
+          project_id: 1
           resource_node_id: ${{ github.event.issue.node_id }}
           status_value: ${{ env.todo }} # Target status
