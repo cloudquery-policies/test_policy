@@ -18,7 +18,7 @@ jobs:
         uses: leonsteinhaeuser/project-beta-automations@v1.2.1
         with:
           gh_token: ${{ secrets.GH_CQ_TEST_TOKEN }}
-          organization: cloudquery
+          organization: cloudquery-policies
           project_id: 1
           resource_node_id: ${{ github.event.issue.node_id }}
           status_value: ${{ env.todo }} # Target status
